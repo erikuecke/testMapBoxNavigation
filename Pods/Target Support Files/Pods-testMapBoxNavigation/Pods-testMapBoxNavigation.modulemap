@@ -1,0 +1,6 @@
+framework module Pods_testMapBoxNavigation {
+  umbrella header "Pods-testMapBoxNavigation-umbrella.h"
+
+  export *
+  module * { export * }
+}
