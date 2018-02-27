@@ -18,13 +18,14 @@ PODS:
     - Solar (~> 2.1)
     - Turf (~> 0.0.4)
   - Polyline (4.2.0)
-  - SDWebImage (4.3.0):
-    - SDWebImage/Core (= 4.3.0)
-  - SDWebImage/Core (4.3.0)
+  - SDWebImage (4.3.1):
+    - SDWebImage/Core (= 4.3.1)
+  - SDWebImage/Core (4.3.1)
   - Solar (2.1.0)
   - Turf (0.0.4)
 
 DEPENDENCIES:
+  - Mapbox-iOS-SDK (~> 3.7)
   - MapboxNavigation (~> 0.13.1)
 
 SPEC CHECKSUMS:
@@ -36,10 +37,10 @@ SPEC CHECKSUMS:
   MapboxMobileEvents: 246843e366f6687f697098673ef78a858c0d8619
   MapboxNavigation: 62e8b4b71208a1dacbd30f2abdd2e68ebbc7ec94
   Polyline: 3d69f75bb136357e27291d439d0436c6ebda57a4
-  SDWebImage: 6da6c8bca115addc4de8613362e1b15f66333825
+  SDWebImage: 09808bac78357b39f8db4ea360c7b5534d785ef4
   Solar: 2dc6e7cc39186cb0c8228fa08df76fb50c7d8f24
   Turf: 6c169618fa671e3f8a7b764b5b3332053ad6110e
 
-PODFILE CHECKSUM: b371618bece5ce234607ffef4afa5006201f706d
+PODFILE CHECKSUM: 3efc87c1e5a44c05b1026c9395fc7176dfedd559
 
 COCOAPODS: 1.4.0

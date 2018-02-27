@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import Mapbox
+import MapboxCoreNavigation
+import MapboxNavigation
+import MapboxDirections
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MGLMapViewDelegate {
+    
+    var mapView: NavigationMapView!
+    var directionsRoute: Route?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        mapView = NavigationMapView(frame: view.bounds)
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        view.addSubview(mapView)
+        
+        // Set the map view's delegate
+        mapView.delegate = self
+        
     }
 
 

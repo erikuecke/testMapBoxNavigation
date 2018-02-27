@@ -6,5 +6,6 @@ target 'testMapBoxNavigation' do
   use_frameworks!
 
   # Pods for testMapBoxNavigation
+  pod 'Mapbox-iOS-SDK', '~> 3.7'
   pod 'MapboxNavigation', '~> 0.13.1'
 end
