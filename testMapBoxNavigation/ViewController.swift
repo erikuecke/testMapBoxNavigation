@@ -105,6 +105,17 @@ class ViewController: UIViewController, MGLMapViewDelegate {
             mapView.style?.addLayer(lineStyle)
         }
     }
+    
+    // Implement the delegate method that allows annotations to show callouts when tapped
+    func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
+        return true
+    }
+    
+    // Present the navigation view controller when the callout is selected
+    func mapView(_ mapView: MGLMapView, tapOnCalloutFor annotation: MGLAnnotation) {
+        let navigationViewController = NavigationViewController(for: directionsRoute!)
+        self.present(navigationViewController, animated: true, completion: nil)
+    }
 
 }
 
